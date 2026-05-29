@@ -22,6 +22,11 @@ public class ItemServiceController {
         return "This message is from Item Service running on port: " + port;
     }
 
+    @GetMapping("/demo/msg")
+    public String showItemServiceMsg() {
+        return "This message is from Item Service /demo/msg running on port: " + port;
+    }
+
     @GetMapping("/ping")
     public String pingItem() {
         return "Item service is running on port : " + port;

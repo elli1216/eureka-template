@@ -12,7 +12,7 @@ public class OrderServiceController {
     @Value("${server.port}")
     private String port;
 
-    @GetMapping("/demo/${name}")
+    @GetMapping("/demo/{name}")
     public String showOrderServiceMessage(@PathVariable String name) {
         return "Item service : " + name + ", this message is from Order Service running on port: " + port;
     }
